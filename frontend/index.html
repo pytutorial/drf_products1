@@ -118,6 +118,7 @@ var app = new Vue({
         openPopup : function() {            
             this.clearErrors();
             this.code = this.name = this.description = this.unitPrice = "";
+            this.image = null;
             document.getElementById('image').value = "";
             if(this.productId) {
                 var url = this.baseURL + '/product/' + this.productId;
